@@ -42,6 +42,7 @@
         <meta property="twitter:title" content="{{ article.title | replace("\"", "&quot;") }}" />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:description" content="{{ article.content | striptags | replace("\"", "&quot;") | truncate(196, False, '...') }}" />
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/article.css" />
         {% elif page is defined %}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}" />
