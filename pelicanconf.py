@@ -31,6 +31,7 @@ SOCIAL = (('twitter', 'https://twitter.com/boringtrent'),
 
 MENUITEMS = (('Twitter', 'https://twitter.com/boringtrent'),
              ('Github', 'https://github.com/TrentSPalmer'),
+             ('Source', 'https://github.com/TrentSPalmer/attentionspanhistory'),
              ('Doc Blog', 'https://blog.trentsonlinedocs.xyz/'),
              ('Favorite Podcasts', 'https://blog.trentsonlinedocs.xyz/posts/trents-favorite-podcasts/'),
              ('TrentReads', 'https://trentpalmer.org'),)
