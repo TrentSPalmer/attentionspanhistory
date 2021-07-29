@@ -13,11 +13,11 @@ There were two types of soldiers in Europe in the Middle Ages:
 1. cavalry
 2. and infantry.
 
-<h2 id="raids">Raids</h2>
+<h3 id="raids">Raids</h3>
 Infantry tended to not be used in raids, because horses had
 the advantage in speed and mobility.
 
-<h2 id="sieges">Sieges</h2>
+<h3 id="sieges">Sieges</h3>
 Cavalry were not much use in sieges, but when infantry were not
 available, the cavalry could obviously dismount.
 
@@ -26,7 +26,7 @@ were easy to use, and effective in sieges. And so, when infantry
 were available for sieges, they would often use CrossBows, and
 would often be Mercenaries.
 
-<h2 id="field-battles">Field-Battles</h2>
+<h3 id="field-battles">Field-Battles</h3>
 In set-piece battles, cavalry and infantry could work together.
 
 For instance cavalry could not charge infantry that were in tight formation
@@ -35,7 +35,7 @@ and for pursuit in the case of a rout. However, for economic reasons,
 most field battles were fought between cavalry because it was too
 expensive to muster both cavalry and infantry most of the time.
 
-## Crusades
+### Crusades
 The Crusades demonstrate that although most field battles in
 Europe during the Middle Ages were fought between Cavalry, the warriors
 of that age were capable of more sophisticated tactics.
@@ -53,7 +53,7 @@ behind them would be CrossBow Infantry, with Cavalry protecting the flanks.
 The edged-weapon infantry would protect the CrossBowMen, who would shoot
 over the top and protect the edged-weapon infantry from enemy harrassment.
 
-## Recommended
+### Recommended
 This blog post is inspired by
 [Wittenberg To Westphalia Podcast](https://wittenbergtowestphaliapodcast.weebly.com/){:target="_blank"}, specifically
 [Episode 38](https://wittenbergtowestphaliapodcast.weebly.com/blog/episode-38-warfare-in-the-middle-ages-part-1){:target="_blank"},

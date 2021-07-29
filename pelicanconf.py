@@ -29,10 +29,17 @@ LINKS = (('Doc Blog', 'https://blog.trentsonlinedocs.xyz/'),
 SOCIAL = (('twitter', 'https://twitter.com/boringtrent'),
           ('github', 'https://github.com/TrentSPalmer'),)
 
+MENUITEMS = (('Twitter', 'https://twitter.com/boringtrent'),
+             ('Github', 'https://github.com/TrentSPalmer'),
+             ('Doc Blog', 'https://blog.trentsonlinedocs.xyz/'),
+             ('Favorite Podcasts', 'https://blog.trentsonlinedocs.xyz/posts/trents-favorite-podcasts/'),
+             ('TrentReads', 'https://trentpalmer.org'),)
+
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-THEME = "notmyidea"
-CSS_FILE = "custom.css"
+THEME = "themes/bstrapplus"
+
+SUMMARY_MAX_LENGTH = 30
