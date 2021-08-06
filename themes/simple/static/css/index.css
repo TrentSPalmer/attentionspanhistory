@@ -1,0 +1,13 @@
+.entry-content {
+  text-align: justify;
+}
+
+.entry-content a{
+  text-decoration: none;
+  font-style: oblique;
+  font-size: 1.1em;
+}
+
+.post-info {
+  margin-bottom: 1em;
+}

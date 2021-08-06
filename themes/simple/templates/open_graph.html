@@ -1,0 +1,33 @@
+{% if article is defined %}
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+  <meta property="og:title" content="{{ article.title | replace("\"", "&quot;") }}" />
+  <meta property="og:description" content="{{ article.content | striptags | replace("\"", "&quot;") | truncate(196, False, '...') }}" />
+  <meta property="twitter:title" content="{{ article.title | replace("\"", "&quot;") }}" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:description" content="{{ article.content | striptags | replace("\"", "&quot;") | truncate(196, False, '...') }}" />
+
+{% elif page is defined %}
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}" />
+  <meta property="og:title" content="{{ SITENAME }} - {{ page.title | replace("\"", "&quot;") }}" />
+  <meta property="og:description" content="{{ page.content | striptags | replace("\"", "&quot;") | truncate(196, False, '...') }}" />
+  <meta property="twitter:title" content="{{ SITENAME }} - {{ page.title | replace("\"", "&quot;") }}" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:description" content="{{ page.content | striptags | replace("\"", "&quot;") | truncate(196, False, '...') }}" />
+
+{% else %}
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ SITEURL }}/{{ output_file }}" />
+  <meta property="og:title" content="{{ SITENAME }}" />
+  <meta property="og:description" content="A page on Attention Span History" />
+  <meta property="twitter:title" content="{{ SITENAME }}" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:description" content="A page on Attention Span History" />
+
+{% endif %}
+
+<meta property="og:image" content="{{ SITEURL }}/images/trent.jpg" />

@@ -1,5 +1,6 @@
 Title: Battle In The Middle Ages
 Date: 2021-07-27
+Tags: Battle, CrossBow, Sieges, Raids,
 Category: War
 
 There were three type of battles in Europe in the Middle Ages:

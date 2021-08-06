@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Search {{ super() }}
+{% endblock title %}
+
+{% block extra_head %}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.css"/>
+  <script src="/tipuesearch_content.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/search.css" />
+
+  <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+          'show': 10,               // shows 10 found entries
+          'descriptiveWords': 75,   // shows 75 words of teaser text
+          'newWindow': false,       // don't open a new window, when clicking a result
+      });
+    });
+  </script>
+{% endblock %}
+
+{% block content %}
+<h1>Search</h1>
+<form action="search.html">
+    <div class="tipue_search_group">
+        <input type="text" name="q" id="tipue_search_input">
+    </div>
+</form>
+<div id="tipue_search_content"></div>
+{% endblock content %}

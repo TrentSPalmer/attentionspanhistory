@@ -1,0 +1,12 @@
+.tipue_search_group {
+  display: flex;
+  justify-content: center;
+}
+
+#tipue_search_content {
+  margin: 0 auto 0 auto;
+}
+
+.tipue_search_content_text {
+  text-align: justify;
+}

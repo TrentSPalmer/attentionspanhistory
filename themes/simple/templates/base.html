@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+  <link rel="shortcut icon" href="{{ SITEURL }}/images/favicon.ico?v=2" />
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{%if FEED_ATOM_URL %}{{ FEED_ATOM_URL }}{% else %}{{ FEED_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_RSS_URL %}{{ FEED_RSS_URL }}{% else %}{{ FEED_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_ATOM and category %}
+        <link href="{{ FEED_DOMAIN }}/{% if CATEGORY_FEED_ATOM_URL %}{{ CATEGORY_FEED_ATOM_URL|format(category.slug) }}{% else %}{{ CATEGORY_FEED_ATOM|format(category.slug) }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_RSS and category %}
+        <link href="{{ FEED_DOMAIN }}/{% if CATEGORY_FEED_RSS_URL %}{{ CATEGORY_FEED_RSS_URL|format(category.slug) }}{% else %}{{ CATEGORY_FEED_RSS|format(category.slug) }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM and tag %}
+        <link href="{{ FEED_DOMAIN }}/{% if TAG_FEED_ATOM_URL %}{{ TAG_FEED_ATOM_URL|format(tag.slug) }}{% else %}{{ TAG_FEED_ATOM|format(tag.slug) }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+        {% endif %}
+        {% if TAG_FEED_RSS and tag %}
+        <link href="{{ FEED_DOMAIN }}/{% if TAG_FEED_RSS_URL %}{{ TAG_FEED_RSS_URL|format(tag.slug) }}{% else %}{{ TAG_FEED_RSS|format(tag.slug) }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+        {% endif %}
+        {% endblock head %}
+        {% include 'open_graph.html' %}
+        {% block extra_head %}
+        {% endblock extra_head %}
+</head>
+
+<body id="index" class="home">
+  <header id="banner" class="body">
+    <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1><hr>
+  </header><!-- /#banner -->
+  <nav id="menu" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+    <a href="{{ SITEURL }}/" class="pure-menu-link pure-menu-heading" >Home</a>
+    <ul class="pure-menu-list">
+
+      {% for title, link in MENUITEMS %}
+        <li class="pure-menu-item">
+          <a href="{{ link }}" class="pure-menu-link">{{ title }}</a>
+        </li>
+      {% endfor %}
+
+
+      {% if DISPLAY_PAGES_ON_MENU %}
+        {% for p in pages %}
+          {% if p == page %}
+            <li class="pure-menu-item">
+              <a class="pure-menu-link" style="color: #343a40;" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+            </li>
+          {% else %}
+            <li class="pure-menu-item">
+              <a class="pure-menu-link" style="color: #6c757d;" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if DISPLAY_CATEGORIES_ON_MENU %}
+        {% for cat, null in categories %}
+          {% if cat == category %}
+            <li class="pure-menu-item">
+              <a class="pure-menu-link" style="color: #343a40;" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+            </li>
+          {% else %}
+            <li class="pure-menu-item">
+              <a class="pure-menu-link" style="color: #6c757d;" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" style="color: #6c757d;" href="{{ SITEURL }}/archives.html">Archives</a>
+      </li>
+    </ul>
+  </nav><!-- /#menu -->
+  {% block content %}
+  {% endblock %}
+  <footer id="contentinfo" class="body">
+    <address id="about" class="vcard body">
+      Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+      which takes great advantage of <a href="http://python.org">Python</a>.
+    </address><!-- /#about -->
+  </footer><!-- /#contentinfo -->
+</body>
+</html>
