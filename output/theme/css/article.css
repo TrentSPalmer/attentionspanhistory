@@ -1,7 +1,5 @@
-address {
-  margin-bottom: 0;
-}
-
-.category {
-  margin-bottom: 1rem;
+.entry-content p{
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.1em;
 }

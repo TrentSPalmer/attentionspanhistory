@@ -1,15 +1,45 @@
-.entry-content p {
-  text-align: justify;
+:root {
+  --black: #343a40;
+  --gray: #6c757d;
 }
 
-.entry-title a {
-  text-decoration: none;
+html, a{
+  color: var(--black);
 }
 
-a {
-  color: #212529;
+body {
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  padding: 5px;
 }
 
 a:hover {
-  color: #6c757d;
+  color: var(--gray);
+}
+
+.pure-menu-heading {
+  color: var(--black);
+}
+
+h1 a{
+  font-size: smaller;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+}
+
+.paginator text{
+  line-height: 1;
+}
+
+.paginator a{
+  font-size: 4em;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
 }

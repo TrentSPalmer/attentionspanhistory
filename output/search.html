@@ -5,13 +5,14 @@
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="https://blog.trentpalmer.org/theme/css/main.css" />
-        <title>Attention Span History - War category</title>
+        <title>  Search Attention Span History
+</title>
         <meta charset="utf-8" />
         <link href="https://blog.trentpalmer.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Attention Span History Full Atom Feed" />
         <link href="https://blog.trentpalmer.org/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Attention Span History Full RSS Feed" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://blog.trentpalmer.org/category/war.html" />
+  <meta property="og:url" content="https://blog.trentpalmer.org/search.html" />
   <meta property="og:title" content="Attention Span History" />
   <meta property="og:description" content="A page on Attention Span History" />
   <meta property="twitter:title" content="Attention Span History" />
@@ -19,7 +20,24 @@
   <meta property="twitter:description" content="A page on Attention Span History" />
 
 
-<meta property="og:image" content="https://blog.trentpalmer.org/images/trent.jpg" /></head>
+<meta property="og:image" content="https://blog.trentpalmer.org/images/trent.jpg" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.css"/>
+  <script src="/tipuesearch_content.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
+  <link rel="stylesheet" href="https://blog.trentpalmer.org/theme/css/search.css" />
+
+  <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+          'show': 10,               // shows 10 found entries
+          'descriptiveWords': 75,   // shows 75 words of teaser text
+          'newWindow': false,       // don't open a new window, when clicking a result
+      });
+    });
+  </script>
+</head>
 
 <body id="index" class="home">
   <header id="banner" class="body">
@@ -63,7 +81,7 @@
               <a class="pure-menu-link" style="color: #6c757d;" href="https://blog.trentpalmer.org/category/opera.html">Opera</a>
             </li>
             <li class="pure-menu-item">
-              <a class="pure-menu-link" style="color: #343a40;" href="https://blog.trentpalmer.org/category/war.html">War</a>
+              <a class="pure-menu-link" style="color: #6c757d;" href="https://blog.trentpalmer.org/category/war.html">War</a>
             </li>
 
       <li class="pure-menu-item">
@@ -71,26 +89,13 @@
       </li>
     </ul>
   </nav><!-- /#menu -->
-  <section id="content">
-<h2>Articles in the War category</h2>
-
-    <link rel="stylesheet" href="https://blog.trentpalmer.org/theme/css/index.css" />
-      <article class="hentry">
-        <header> <h2 class="entry-title"><a href="https://blog.trentpalmer.org/battle-in-the-middle-ages.html" rel="bookmark" title="Permalink to Battle In The Middle Ages">Battle In The Middle Ages</a></h2> </header>
-        <footer class="post-info">
-          <time class="published" datetime="2021-07-27T00:00:00-07:00"> Tue 27 July 2021 </time>
-          <address class="vcard author">By
-              <a class="url fn" href="https://blog.trentpalmer.org/author/trent-palmer.html">Trent Palmer</a>
-          </address>
-        </footer><!-- /.post-info -->
-        <div class="entry-content">
-          <a href="https://blog.trentpalmer.org/battle-in-the-middle-ages.html" rel="bookmark" title="Permalink to Battle In The Middle Ages">
-            There were three type of battles in Europe in the Middle Ages: Raids Sieges Field-Battles There were two types of soldiers in Europe in the Middle Ages: cavalry and infantry. Raids Infantry tended to not be used in raids, because horses had the advantage in speed and mobility. Sieges Cavalry …
-          </a>
-        </div><!-- /.entry-content -->
-      </article>
-    <hr>
-  </section><!-- /#content -->
+<h1>Search</h1>
+<form action="search.html">
+    <div class="tipue_search_group">
+        <input type="text" name="q" id="tipue_search_input">
+    </div>
+</form>
+<div id="tipue_search_content"></div>
   <footer id="contentinfo" class="body">
     <address id="about" class="vcard body">
       Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
