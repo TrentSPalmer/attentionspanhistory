@@ -37,7 +37,7 @@ Caesar's campaign to pacify Gaul.
 Part of the drama here was that the
 Veneti were experienced in operating on the ocean, whereas the Romans
 would have only ever known the waters of the Mediterranean Sea.
-In particulary, ships sailed by the Veneti were faster than the Roman ships.
+In particular, ships sailed by the Veneti were faster than the Roman ships.
 
 ### Recommended
 
