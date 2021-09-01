@@ -8,7 +8,7 @@ are so called because their
 *[Ulster-Scots](https://en.wikipedia.org/wiki/Ulster_Scots_people){target="_blank"}*
 Ancestors supported King William III during the Williamite War.
 
-## Ulster
+### Ulster
 You may be familiar with current events in Northern Ireland. This history goes back to
 a time when Scots from Southern Scotland and Northern England colonized
 *[Ulster](https://en.wikipedia.org/wiki/Ulster){target="_blank"}*
