@@ -65,7 +65,7 @@ of ideology. Western Elitists may very well hold the ideology that identity is
 an ideology, but the ideology of identity being an ideology, is not that same
 thing as identity being an ideology. This merely shows how out-of-touch Elitists are.
 
-But even if we stipulate that identity is an ideology, this only applied to
+But even if we stipulate that identity is an ideology, this only applies to
 Russia coming to Serbia's defense because the Serbs are Slavs. And while it is
 true that the war would not have happened if Russia had not stood up for Serbia,
 in the final analysis Serbia was only a pawn. And furthermore, Russia was equally
@@ -99,7 +99,7 @@ as it is to cast Trump's Border Wall as racist.
 
 ### War as an Ideology
 The Statesmen who pushed over the dominoes, may well have
-embraced the Glory or War, but that was an evolution; an effect but not a cause.
+embraced the Glory of War, but that was an evolution; an effect but not a cause.
 As of June 28,
 no one thought that the destruction of Europe would be therapeutic.
 
